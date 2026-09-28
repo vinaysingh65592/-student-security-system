@@ -1,0 +1,28 @@
+# Environment
+.env
+
+# Windows reserved filename (cannot be tracked by git)
+con.php
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Archives & duplicates
+Parent_Updated.zip
+Parent_Updated/
+
+# Node modules (from vercel CLI)
+node_modules/
+
+# Chat logs
+chat_2023_06_20_22_20_52.md
+chat.html
+
+# ID card PDF
+Id_card/

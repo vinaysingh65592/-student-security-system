@@ -1,0 +1,37 @@
+# Apache Configuration for Student Security System
+
+# Enable Output Buffering
+<IfModule mod_php.c>
+    php_value output_buffering 4096
+    php_value upload_max_filesize 32M
+    php_value post_max_size 32M
+</IfModule>
+<IfModule mod_php7.c>
+    php_value output_buffering 4096
+    php_value upload_max_filesize 32M
+    php_value post_max_size 32M
+</IfModule>
+<IfModule mod_php8.c>
+    php_value output_buffering 4096
+    php_value upload_max_filesize 32M
+    php_value post_max_size 32M
+</IfModule>
+
+# Disable Directory Browsing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Protect Sensitive Files
+<FilesMatch "^(\.env|\.git|database\.sql|composer\.(json|lock)|Dockerfile|docker-compose\.ya?ml)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>

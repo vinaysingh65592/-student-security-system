@@ -1,0 +1,31 @@
+
+.form_outer
+{
+    /* height:600px; */
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    min-height:auto;
+    /* min-width: 500px; */
+}
+table td
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    /* text-align: center; */
+}
+.table td
+{
+   text-align: center;
+   word-wrap: none;
+}
+table td img
+{
+    height: 50%;
+    width: 50%;
+    
+}

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --light: #fff;
+    --green: green;
+    --primary: blue;
+}
+
+/***********************
+#Custom CSS
+***********************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ********************************
+#Navbar CSS
+*********************************** */
+
+#navbar{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    
+}
+#navbar .nav-item .nav-link{
+    font-size: 14px;
+    color: var(--light) !important;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 2px solid transparent !important;
+
+}
+#navbar .nav-item .nav-link:hover{
+    color: var(--green) !important;
+    background-color: var(--light);
+    border-radius: 5px;
+}
+.navbar-toggler{
+    outline: none !important;
+    border: none !important;
+    color: var(--light) !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+    font-size: 30px;
+}
+nav .login-btn{
+    color: var(--light) !important;
+    text-align: center;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+}
+nav .login-btn:hover{
+    color: var(--light) !important;
+    background-color: var(--green);
+}
+
+/* ***************************
+Carousel Section
+****************************** */
+
+.hero{
+    width: 100%;
+}
+.hero .carousel-item img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero .carousel-item::before{
+    content: "";
+    background-color: #040f28;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+}
+.hero .carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.hero .carousel-content-container{
+    text-align: center;
+    color: var(--light);
+}
+.hero .carousel-content-container h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+}
+.hero .carousel-content-container p{
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 20px auto 30px auto;
+    text-align: justify;
+}
+.button .button1{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 12px 30px;
+    line-height: 1;
+    margin: 10px 10px;
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 50px;
+}
+
+/***********************
+#Feature Section
+***********************/
+.services .main-service-box{
+    margin-bottom: 30px;
+    background-color: var(--light);
+    box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    padding: 25px 20px;
+    overflow: hidden;
+}
+
+.services .main-service-box .icon{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    background-color: var(--primary);
+    color: var(--light);
+    transition: .5s;
+    font-size: 25px;
+}
+
+.services .main-service-box h3{
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+.services .main-service-box p{
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+/***********************
+#About Section
+***********************/
+
+.about{
+    position: relative;
+}
+.about h1{
+    display: block;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 5px;
+    color: var(--green);
+    font-size: 50px;
+
+}
+
+.about h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.about p{
+    font-size: 14px;
+    text-align: justify;
+}
+.button .button3{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 30px;
+    line-height: 1;
+    background-color: var(--primary);
+    margin: 10px 10px;
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 50px;   
+}
+
+/* Contact Section */
+
+.contact .outer-form{
+    border: 1px solid var(--green) !important;
+    border-radius: 5px;
+}
+.contact .map{
+    border: 5px double var(--primary);
+}
+
+
+/* After scrolling  */
+#navbar .changeColor {
+    background-color: var(--light);
+    box-shadow: 0 2px 10px rgba(8, 8, 8, 0.5);
+}
+#navbar .changeColor .nav-item .nav-link{
+    color: green !important;
+}
+#navbar .changeColor .nav-item .nav-link:hover{
+    background: var(--primary);
+    color: var(--light) !important;
+    border-radius: 5px;
+}
+#navbar .changeColor .navbar-toggler{
+    color: var(--primary) !important;
+}
+#navbar .changeColor .login-btn{
+    color: var(--green) !important;
+    border: 1px solid var(--green);
+}
+#navbar .changeColor .login-btn:hover{
+    color: var(--light) !important;
+    background-color: var(--green);
+}
+#query{
+    resize: none;
+}
+
+
+
+
+/* Breakpoints*/
+
+
+@media(max-width:768px){
+    .hero .carousel-content-container h2{
+        font-size: 35px;
+    }
+    .hero .carousel-content-container p{
+        font-size: 13px;
+    }
+    .button .button1{
+        font-size: 13px;
+        padding: 9px 30px;
+    }
+}
+@media(max-width:992px){
+    nav .show{
+        background-color:var(--light);
+        transition-duration: 0s;
+    }
+    nav ul li{
+        margin: 0px auto;
+    }
+    #navbar nav .nav-item .nav-link{
+        color: var(--green) !important;
+    }
+    #navbar nav .nav-item .nav-link:hover{
+        color: var(--light) !important;
+        background-color: var(--green) !important;
+        border-radius: 5px;
+    }
+    nav .login-btn{
+        color: var(--green) !important;
+        text-align: center;
+        border: 1px solid var(--green);
+        border-radius: 5px;
+    }
+    nav .login-btn:hover{
+        color: var(--light) !important;
+        background-color: var(--green);
+    }
+    
+}
+

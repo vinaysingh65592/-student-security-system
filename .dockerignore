@@ -1,0 +1,10 @@
+.git
+.gitignore
+.dockerignore
+*.zip
+Parent_Updated.zip
+Parent_Updated/
+.vscode/
+.idea/
+*.md
+!README.md
